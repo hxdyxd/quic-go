@@ -167,9 +167,11 @@ func (c *client) RoundTrip(req *http.Request) (*http.Response, error) {
 	hasBody := (req.Body != nil)
 
 	responseChan := make(chan *http.Response)
-	dataStream, err := c.session.OpenStreamSync()
+	dataStream, err := c.session.OpenStream()
 	if err != nil {
-		_ = c.CloseWithError(err)
+		if err != qerr.TooManyOpenStreams {
+			_ = c.CloseWithError(err)
+		}
 		return nil, err
 	}
 	c.mutex.Lock()
