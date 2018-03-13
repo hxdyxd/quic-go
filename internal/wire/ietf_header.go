@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/qerr"
+	"github.com/phuslu/quic-go/internal/protocol"
+	"github.com/phuslu/quic-go/internal/utils"
+	"github.com/phuslu/quic-go/qerr"
 )
 
 // parseHeader parses the header.

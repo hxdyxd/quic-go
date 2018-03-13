@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	quic "github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	quic "github.com/phuslu/quic-go"
+	"github.com/phuslu/quic-go/internal/protocol"
+	"github.com/phuslu/quic-go/internal/utils"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
 )

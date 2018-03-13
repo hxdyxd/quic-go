@@ -5,11 +5,11 @@ import (
 	"math"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/internal/congestion"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/internal/wire"
-	"github.com/lucas-clemente/quic-go/qerr"
+	"github.com/phuslu/quic-go/internal/congestion"
+	"github.com/phuslu/quic-go/internal/protocol"
+	"github.com/phuslu/quic-go/internal/utils"
+	"github.com/phuslu/quic-go/internal/wire"
+	"github.com/phuslu/quic-go/qerr"
 )
 
 const (
